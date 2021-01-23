@@ -4,14 +4,15 @@ const text = 'Lorem ipsum';
 
 const createText = {
   originalContent: text,
-  changedContent: 'LOREM IPSUM',
-  textLenght: 11,
+  changedContent: text.toUpperCase(),
+  textLenght: text.length,
 };
 
 const handleWriteText = (err) => {
   if (err) {
     console.log('Error', err);
   } else {
+    console.log(createText);
     console.log('OK');
   }
 };
